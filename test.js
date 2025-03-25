@@ -30,5 +30,10 @@ function buggyLogic(x) {
   }
 }
 
+// Add this new feature
+function shoutUser(name) {
+    console.log("HELLO " + name.toUpperCase() + "!!!");
+  }
+
 greetUser("Shubhang");
 buggyLogic(4);
