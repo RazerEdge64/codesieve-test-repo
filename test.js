@@ -9,23 +9,18 @@ function sum(a, b) {
   return a + b;
 }
 
-// Unused code
-function unusedHelper() {
-  console.log("This is never called");
-}
-
 // Add a new feature
 function greetUser(name) {
   if (!name) {
     console.log("Hello, guest!");
   } else {
-    console.log("Hello, " + name);
+    console.log(`Hello, ${name}`);
   }
 }
 
 // Simulate a bug
 function buggyLogic(x) {
-  if (x = 5) { // <-- Assignment instead of comparison
+    if (x === 5) {
     console.log("X is 5");
   }
 }
@@ -37,3 +32,4 @@ function shoutUser(name) {
 
 greetUser("Shubhang");
 buggyLogic(4);
+shoutUser("CodeSieve");
